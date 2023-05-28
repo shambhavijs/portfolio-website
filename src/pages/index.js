@@ -91,14 +91,14 @@ export default function Home() {
         <div className={styles.about} data-aos="fade-up" data-aos-duration="700">
           <p className={styles.sectionTitle}>About</p>
           <div className={styles.aboutWrapper}>
-            <p className={styles.bio} data-aos="fade-right" data-aos-duration="1200">
+            <p className={styles.bio} data-aos="fade-up" data-aos-duration="1200">
               Hey, my name is Shambhavi and I live in India. I'm a frontend developer who enjoys making cool and useful web apps with ReactJS and other modern technologies. 
               I've been doing this for 2 years and I've worked on some awesome websites for different clients and niches. <br></br><br></br>
               I know how to use HTML, CSS, JavaScript, and ReactJS, as well as some handy tools like Git, Webpack, and Tailwind. 
               I also have experience with NextJS and GraphQL, which are great for building fast and scalable web apps. <br></br><br></br>
               I'm always up for learning new stuff and trying out new technologies and frameworks to level up my skills and create awesome products.
             </p>
-            <div className={styles.overlay} data-aos="fade-left" data-aos-duration="1200"></div>
+            <div className={styles.overlay} data-aos="fade-up" data-aos-duration="1200"></div>
             
           </div>
         </div>
