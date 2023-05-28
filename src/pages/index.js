@@ -45,7 +45,7 @@ export default function Home() {
           <p className={styles.duration} data-aos="fade-up" data-aos-duration="1100">2021-2023</p>
           <div className={styles.projectWrapper} data-aos="fade-up" data-aos-duration="1800">
             <div className={styles.projectCard}>
-              <Image src='/banner-unschool.webp' width={80} height={80} unoptimized={true} className={styles.image}/>
+              <Image src='/banner-unschool.webp' width={80} height={80} unoptimized={true} className={styles.image} alt="logo"/>
               <div className={styles.projectDetails}>
                 <p className={styles.projectName}>Unschool LMS</p>
                 <p className={styles.techStack}>NextJS, Redux, Apollo GraphQL, AntDesign</p>
@@ -53,7 +53,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.projectCard}>
-              <Image src='/mentormind.webp' width={80} height={80} unoptimized={true} className={styles.image}/>
+              <Image src='/mentormind.webp' width={80} height={80} unoptimized={true} className={styles.image} alt="logo"/>
               <div className={styles.projectDetails}>
                 <p className={styles.projectName}>MentorMind</p>
                 <p className={styles.techStack}>Slim, Bootstrap, RoR</p>
@@ -61,7 +61,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.projectCard}>
-              <Image src='/binit.jpg' width={80} height={80} unoptimized={true} className={styles.image}/>
+              <Image src='/binit.jpg' width={80} height={80} unoptimized={true} className={styles.image} alt="logo"/>
               <div className={styles.projectDetails}>
                 <p className={styles.projectName}>BinIt</p>
                 <p className={styles.techStack}>NextJS, TypeScript, Apollo GraphQL, Redux</p>
@@ -69,7 +69,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.projectCard}>
-              <Image src='/worl-protests.webp' width={80} height={80} unoptimized={true} className={styles.image}/>
+              <Image src='/worl-protests.webp' width={80} height={80} unoptimized={true} className={styles.image} alt="logo"/>
               <div className={styles.projectDetails}>
                 <p className={styles.projectName}>World Protests</p>
                 <p className={styles.techStack}>NextJS, Rematch, AWS, Highcharts</p>
@@ -77,7 +77,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.projectCard}>
-              <Image src='/daily9-logo.png' width={80} height={80} unoptimized={true} className={styles.image}/>
+              <Image src='/daily9-logo.png' width={80} height={80} unoptimized={true} className={styles.image} alt="logo"/>
               <div className={styles.projectDetails}>
                 <p className={styles.projectName}>Daily9 Mobile App</p>
                 <p className={styles.techStack}>React Native, Android Studio, XCode</p>
@@ -115,8 +115,8 @@ export default function Home() {
             I’m always up for meeting new people and exploring new possibilities.</p>
           </div>
           <div className={styles.socialMedia} data-aos="fade-up" data-aos-duration="1100">
-            <a href="https://www.linkedin.com/in/shambhavi6/"><Image src='/linkedin.png' width={35} height={35} className={styles.socialLogo}/></a>
-            <a href="https://github.com/shambhavijs"><Image src='/github.png' width={35} height={35} className={styles.socialLogo}/></a>
+            <a href="https://www.linkedin.com/in/shambhavi6/"><Image src='/linkedin.png' width={35} height={35} className={styles.socialLogo} alt="logo"/></a>
+            <a href="https://github.com/shambhavijs"><Image src='/github.png' width={35} height={35} className={styles.socialLogo} alt="logo"/></a>
           </div>
         </div>
       </section>
