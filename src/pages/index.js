@@ -1,124 +1,125 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Image from 'next/image';
+import styles from '../styles/Home.module.scss';
+import Link from 'next/link';
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className={styles.homePageWrapper}>
+      {/* <Image src='/bg.png' width={100} height={100} unoptimized={true} className={styles.bgImage}/> */}
+      <section className={styles.heroSectionWrapper}>
+        <div className={styles.heroSection}>
+          <div className={styles.title}>I am Shambhavi,
+            <div className={styles.glitchWrapper}>
+              <p className={styles.glitch} data-glitch="Frontend Developer">Frontend Developer</p>
+            </div>
+          </div>
+          <p className={styles.tagline}>Crafting beautiful and functional websites, one line of code at a time and creating seamless user experiences through front-end development.</p>
         </div>
+        <div className={styles.navbar} data-aos="fade-left" data-aos-duration="200">
+          <div className={styles.navlink}><Link href="#projects-section">Work</Link></div>
+          <div className={styles.navlink}><Link href="#about-section">About</Link></div>
+          <div className={styles.navlink}><Link href="#contact-section">Contact</Link></div>
+        </div>  
+      </section>
+
+      <div className={styles.heading} data-aos="fade-up" data-aos-duration="1200">SKILLS</div>
+        <div className={styles.skillWrapper}> 
+          <div className={styles.carousel}>
+            <p className={styles.skillName}>HTML</p>
+            <p className={styles.skillName}>CSS</p>
+            <p className={styles.skillName}>JavaScript</p>
+            <p className={styles.skillName}>ReactJS</p>
+            <p className={styles.skillName}>GraphQL</p>
+            <p className={styles.skillName}>Redux</p>
+            <p className={styles.skillName}>Tailwind</p>
+            <p className={styles.skillName}>SEO</p>
+            <p className={styles.skillName}>Website Performance</p>
+            <p className={styles.skillName}>AntDesign</p>
+          </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <section id='projects-section' class='py-4'>
+        <div className={styles.projects} >
+          <p className={styles.sectionTitle} data-aos="fade-up" data-aos-duration="600">Work</p>
+          <p className={styles.designation} data-aos="fade-up" data-aos-duration="1000">Frontend Developer at Commutatus</p>
+          <p className={styles.duration} data-aos="fade-up" data-aos-duration="1100">2021-2023</p>
+          <div className={styles.projectWrapper} data-aos="fade-up" data-aos-duration="1800">
+            <div className={styles.projectCard}>
+              <Image src='/banner-unschool.webp' width={80} height={80} unoptimized={true} className={styles.image}/>
+              <div className={styles.projectDetails}>
+                <p className={styles.projectName}>Unschool LMS</p>
+                <p className={styles.techStack}>NextJS, Redux, Apollo GraphQL, AntDesign</p>
+                <button><a href="https://www.unschool.in/">Visit Website</a></button>
+              </div>
+            </div>
+            <div className={styles.projectCard}>
+              <Image src='/mentormind.webp' width={80} height={80} unoptimized={true} className={styles.image}/>
+              <div className={styles.projectDetails}>
+                <p className={styles.projectName}>MentorMind</p>
+                <p className={styles.techStack}>Slim, Bootstrap, RoR</p>
+                <button><a href="https://www.mentormind.in/">Visit Website</a></button>
+              </div>
+            </div>
+            <div className={styles.projectCard}>
+              <Image src='/binit.jpg' width={80} height={80} unoptimized={true} className={styles.image}/>
+              <div className={styles.projectDetails}>
+                <p className={styles.projectName}>BinIt</p>
+                <p className={styles.techStack}>NextJS, TypeScript, Apollo GraphQL, Redux</p>
+                <button><a href="https://binit.ai/">Visit Website</a></button>
+              </div>
+            </div>
+            <div className={styles.projectCard}>
+              <Image src='/worl-protests.webp' width={80} height={80} unoptimized={true} className={styles.image}/>
+              <div className={styles.projectDetails}>
+                <p className={styles.projectName}>World Protests</p>
+                <p className={styles.techStack}>NextJS, Rematch, AWS, Highcharts</p>
+                <button><a href="https://www.worldprotests.org/">Visit Website</a></button>
+              </div>
+            </div>
+            <div className={styles.projectCard}>
+              <Image src='/daily9-logo.png' width={80} height={80} unoptimized={true} className={styles.image}/>
+              <div className={styles.projectDetails}>
+                <p className={styles.projectName}>Daily9 Mobile App</p>
+                <p className={styles.techStack}>React Native, Android Studio, XCode</p>
+                <button><a href="https://apps.apple.com/in/app/daily9/id1193946897">Visit App Store</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id='about-section' class='py-4'>
+        <div className={styles.about} data-aos="fade-up" data-aos-duration="700">
+          <p className={styles.sectionTitle}>About</p>
+          <div className={styles.aboutWrapper}>
+            <p className={styles.bio} data-aos="fade-right" data-aos-duration="1200">
+              Hey, my name is Shambhavi and I live in India. I'm a frontend developer who enjoys making cool and useful web apps with ReactJS and other modern technologies. 
+              I've been doing this for 2 years and I've worked on some awesome websites for different clients and niches. <br></br><br></br>
+              I know how to use HTML, CSS, JavaScript, and ReactJS, as well as some handy tools like Git, Webpack, and Tailwind. 
+              I also have experience with NextJS and GraphQL, which are great for building fast and scalable web apps. <br></br><br></br>
+              I'm always up for learning new stuff and trying out new technologies and frameworks to level up my skills and create awesome products.
+            </p>
+            <div className={styles.overlay} data-aos="fade-left" data-aos-duration="1200"></div>
+            
+          </div>
+        </div>
+      </section>
+      <section id='contact-section' className={styles.contact}>
+        <div className={styles.contactWrapper}>
+          <div className={styles.leftSection} data-aos="zoom-in" data-aos-duration="800">
+            Let's
+            <div className={styles.contactHeading}> work together!</div>
+          </div>
+          <div className={styles.mailSection} data-aos="fade-right" data-aos-duration="1000">
+            <p>If you want to chat with me or learn more about my skills, just shoot me an email at
+            <a href="mailto:shambhavi6198@gmail.com" className={styles.emailid}>shambhavi6198@gmail.com</a>
+            I’m always up for meeting new people and exploring new possibilities.</p>
+          </div>
+          <div className={styles.socialMedia} data-aos="fade-up" data-aos-duration="1100">
+            <a href="https://www.linkedin.com/in/shambhavi6/"><Image src='/linkedin.png' width={35} height={35} className={styles.socialLogo}/></a>
+            <a href="https://github.com/shambhavijs"><Image src='/github.png' width={35} height={35} className={styles.socialLogo}/></a>
+          </div>
+        </div>
+      </section>
+    </div>
   )
 }
